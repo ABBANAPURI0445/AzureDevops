@@ -7,4 +7,4 @@
    6. Packer --> building Image 
    7. Jenkins & Azure Devops ---> CICD tool 
 
-   ![DevOps Tools Map](C:\Users\nares\Desktop\CLOUD\AzureDevops\Devops-Tools.jpg)
+   ![DevOps Tools Map](Devops-Tools.jpg)
