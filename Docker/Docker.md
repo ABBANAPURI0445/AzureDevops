@@ -12,7 +12,7 @@
    3. Deploy into Platform 
         1. if you want to deploy Java application? where we deploy?
             1. You can deploy any OS (Linux or Windows, Mac)
-            2. You need to deploy in Specific Middileware 
+            2. You need to deploy in Specific Application Server (Middileware)
                 1. tomcat 
                 2. weblogic 
                 3. Wildfly 
