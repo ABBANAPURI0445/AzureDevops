@@ -19,11 +19,22 @@
                 4. jetty  
 
 ### Deploy JAVA Application in Tomcat 
-   1. Developer develop java code [Click Here for Sample Code](https://github.com/wakaleo/game-of-life) 
+   1. java Sample project code [Click Here for Sample Code](https://github.com/wakaleo/game-of-life) 
    2. Clone Source Code ```git clone https://github.com/wakaleo/game-of-life.git``` 
-   3. install Apache Maven on ubuntu18
-   4. Convert into Package(Build) by using Build tool --> eg Apache Maven it generate .war file
+   3. Install Apache Maven on ubuntu18
+      ```
+       sudo apt-get update
+       sudo apt install openjdk-8-jdk -y
+       sudo apt-get install maven -y
+      ```
+
+   4. Convert into Package(Build) by using Build tool --> eg Apache Maven it generate .war file 
+      ```
+      cd game-of-life 
+      maven package
+      ```
    5. Install Tomcat8 on ubuntu 18
-   6. Deploy .war file into Tomcat8 
+   6. Deploy .war file into Tomcat8 into specific location ```cd /var/lib/tomcat8/webapps``` 
+   7. how to access application? --> http://publicIP:8080/gameoflife
       
     
