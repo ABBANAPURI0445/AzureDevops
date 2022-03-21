@@ -35,6 +35,7 @@
       ```
    5. Install Tomcat8 on ubuntu 18
    6. Deploy .war file into Tomcat8 into specific location ```cd /var/lib/tomcat8/webapps``` 
-   7. how to access application? --> http://publicIP:8080/gameoflife
+   7. how to access application? --> http://publicIP:8080/gameoflife 
+      ![Gameoflife](Gameoflife.PNG)
       
     
