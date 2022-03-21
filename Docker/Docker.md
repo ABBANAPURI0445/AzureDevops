@@ -6,10 +6,10 @@
        3. Deploy application into platform(Server) eg Windows, Linux  
 
 ### Java Application
-    1. Developer develop java code for Banking Application 
-    2. Code need to covert into Package(.jar , .war and .ear)  .exe for .net code 
-        1. How Code convert into Package?  --> Build tool 
-    3. Deploy into Platform 
+   1. Developer develop java code for Banking Application 
+   2. Code need to covert into Package(.jar , .war and .ear)  .exe for .net code 
+      1. How Code convert into Package?  --> Build tool 
+   3. Deploy into Platform 
         1. if you want to deploy Java application? where we deploy?
             1. You can deploy any OS (Linux or Windows, Mac)
             2. You need to deploy in Specific Middileware 
