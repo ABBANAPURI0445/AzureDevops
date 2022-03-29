@@ -18,6 +18,11 @@
 
 
 ## How to Access Storage Account Securely 
-   1. Access keys  
-   2. SAS (Share Access Signature)
-   3. Active directory  
+   1. Access keys (Full permissiom - user can do anything)
+   2. SAS (Shared Access Signature)  --> 
+   3. Active directory (trusted way) 
+       1. add role assignment to user 
+           1. Storage Account Contributor
+           2. Storage Blob Data Contributor
+           3. Storage Blob Data Owner   
+

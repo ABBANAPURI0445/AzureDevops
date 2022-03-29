@@ -10,4 +10,4 @@
    1. each one piece of component (payment, orders,cart, login,fashoin)
       1. you can scaleup and scale down  single component 
       2. where we deploy Micro services --> Containers (Docker) 
- ![Micro Service](MicroServices.png)
+ ![Micro Service](MicroServices.png) 
