@@ -42,7 +42,7 @@
    2. ZRS(Zone-redundant storage (ZRS) replicates your Azure Storage data synchronously across three Azure availability zones in the primary region) 
    3. GRS(Using LRS )
    4. GZRS (using ZRS)  --> high availble 
-   [click Here](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy?toc=/azure/storage/blobs/toc.json)
+   [data redundancy for Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy?toc=/azure/storage/blobs/toc.json)
 
 
 ## Pricing 
