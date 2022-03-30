@@ -18,11 +18,43 @@
 
 
 ## How to Access Storage Account Securely 
-   1. Access keys (Full permissiom - user can do anything)
+   1. Access keys (Full Access  - We don't have control to restric the access ) --> Less Secured
    2. SAS (Shared Access Signature)  --> 
+        1. We can control to restric the access  ie read, write etc 
+        2. if I generate SAS key with Write and Read access on Blob  
+             1. Access Policy --> Control restric access even after generate the SAS Key 
    3. Active directory (trusted way) 
        1. add role assignment to user 
            1. Storage Account Contributor
            2. Storage Blob Data Contributor
            3. Storage Blob Data Owner   
+## Performance tier
+   1. Standard 
+   2. Premium  
+   [Click here](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview?toc=/azure/storage/blobs/toc.json) 
 
+### Storage Redundance: 
+   1. LRS(Locally redundant storage (LRS) replicates your data three times within a single data center in the primary region) that means stored in 3 diffrent racks 
+      1. If DC outage entire, data centre Az
+          1. Power outage 
+          2. Network issue
+          3. disaster 
+   2. ZRS(Zone-redundant storage (ZRS) replicates your Azure Storage data synchronously across three Azure availability zones in the primary region) 
+   3. GRS(Using LRS )
+   4. GZRS (using ZRS)  --> high availble 
+   [click Here](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy?toc=/azure/storage/blobs/toc.json)
+
+
+## Pricing 
+   1. if you upload 1 gb file in storage account -- with LRS it create 3 copies 
+      ```
+      3*1GB = 3GB
+      ``` 
+   2. if you upload 1 gb file in storage account -- with ZRS it create 3 copies  
+      ```
+      3*1GB = 3GB and Data transfer charge(across the AZ in single region)
+      ``` 
+   3. if you upload 1 gb file in storage account -- with GRS it create 3 copies
+      ```
+      6*1GB = 6GB and Data transfer charge(across the region)
+      ```
