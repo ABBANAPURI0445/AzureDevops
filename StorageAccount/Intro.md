@@ -42,19 +42,20 @@
    2. ZRS(Zone-redundant storage (ZRS) replicates your Azure Storage data synchronously across three Azure availability zones in the primary region) 
    3. GRS(Using LRS )
    4. GZRS (using ZRS)
+   
    [data redundancy for Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy?toc=/azure/storage/blobs/toc.json)
 
 
 ## Pricing 
-   1. if you upload 1 gb file in storage account -- with LRS it create 3 copies 
+   1. if you upload 1 gb file in storage account -- with LRS it create 3 copies in single DC
       ```
       3*1GB = 3GB
       ``` 
-   2. if you upload 1 gb file in storage account -- with ZRS it create 3 copies  
+   2. if you upload 1 gb file in storage account -- with ZRS it create 3 copies  in 3 DC in single region
       ```
       3*1GB = 3GB and Data transfer charge(across the AZ in single region)
       ``` 
-   3. if you upload 1 gb file in storage account -- with GRS it create 3 copies
+   3. if you upload 1 gb file in storage account -- with GRS it create 6 copies(3 Copies in primary region and 3 copies in secondary region)
       ```
       6*1GB = 6GB and Data transfer charge(across the region)
       ```
