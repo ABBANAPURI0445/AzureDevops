@@ -58,4 +58,6 @@
    3. if you upload 1 gb file in storage account -- with GRS it create 6 copies(3 Copies in primary region and 3 copies in secondary region)
       ```
       6*1GB = 6GB and Data transfer charge(across the region)
-      ```
+      ``` 
+
+
