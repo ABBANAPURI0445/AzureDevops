@@ -12,3 +12,15 @@
    2. create File Share 
    3. Mapp the file share to the VM
 
+
+### File share 
+   1. Its common location to access and retrive the data with in the network 
+   2. File share we can connect to multiple devices at time
+   3. Task 
+      1. Connect Linux Vm to Fileshare 
+      2. Connect Windows Vm to Fileshare
+      3. Test
+          1. upload any file into Fileshare and Check the Results 2 Vm's 
+          2. upload any file into Windows Vm and check the Results fileshare and Linux Vm
+          3. upload any file into Linux Vm and check the Results in File share and Windows Vm 
+   ![FileShare](FileShare.png)
