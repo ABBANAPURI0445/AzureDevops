@@ -51,7 +51,7 @@
          1. Using Code we can build and manage the infrastructure 
          2. write once and use many
 
-![infra](infra.png) 
-![Infra1](Authentication.png)
+![infra](Images/infra.png) 
+![Infra1](Images/Authentication.png)
    
   
