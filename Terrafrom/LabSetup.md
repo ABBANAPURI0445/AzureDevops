@@ -10,4 +10,4 @@
            2. unzip terraform binary 
            3. copy the path and create enviornment variable for terraform 
        2. using choco 
-           ```choco install terraform```
+           ```choco install terraform``` 
