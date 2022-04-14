@@ -11,12 +11,13 @@
             1. reserved Private Ip Ranges 
                 1. 192.168.x.x/x ---> <65k you can connect upto 65k devices
                 2. 172.16.x.x/x to 172.32.x.x/x ---> >65k you can connect more than 65k devices
-                3. 10.x.x.x/x ---> you can connect up 4.5 crores   
+                3. 10.x.x.x/x ---> you can connect up 4.5 crores 
+        ![InternetIP](I.png)  
 
 ### How to access Internet 
    1. we access internet only with Public IP, We can't access with private 
    2. But we still access internet with Private IP Address using ISP ie BSNL, Hathway, Act fiber, Airtel Vodafone 
-
+![Internet](IPAddtess.png)
 ### Types of IP Version 
    1. Ipv4
       1. this IP address consists of 4 bytes and 32 bits 
@@ -65,14 +66,16 @@
 
    ### Class less Network 
      1. We can network based your requiremenmt - you will approximatly met the requirement  
-         
+        ``` 
         11111111.11111111.1111111.00000000 = 256 
         11111111.11111111.1111110.00000000 = 512 
         11111111.11111111.1111100.00000000 = 2^host address 2^10 = 1024
         255.255.251.0 
         subnet mask = /22 
-        192.168.0.0/22  
+        192.168.0.0/22 
+        ``` 
      2. 5k Ips
+     ```
         11111111.11111111.11111100.00000000 = 1024 
         11111111.11111111.11111000.00000000 = 2048 
         11111111.11111111.11110000.00000000 = 4096 
@@ -104,6 +107,8 @@
 
         Network ID = 192.168
          Host ID = 7.9 
+       ``` 
+       ![CIDR](CIDR.png)
 
 
 

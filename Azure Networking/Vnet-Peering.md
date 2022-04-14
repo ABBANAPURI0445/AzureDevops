@@ -6,3 +6,4 @@
           1. SubA1 And SubA2 under VnetA
           2. SubB1 and SubB2 under VnetB 
       3. Deploy Vm's on each Subnets without Public 
+  ![VnetPeering](Peering.png)

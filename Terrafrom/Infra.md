@@ -50,5 +50,8 @@
       2. IAC  --> Terraform  
          1. Using Code we can build and manage the infrastructure 
          2. write once and use many
+
+![infra](infra.png) 
+![Infra1](Authentication.png)
    
   
