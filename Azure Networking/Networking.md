@@ -1,16 +1,18 @@
 ## Azure Networking: Vnet(Virtual Network)
    1. What is IP 
-   2. CIDR and Subnet Mask
-   3. Network
-   4. Subnet and NIC
+   2. CIDR and Subnet Mask 
+   3. Network Vnet 
+   4. Subnet and NIC 
    5. Vnet Peering 
-   6. VPN Gateway 
-   7. Azure Load Balanacer
-   8. Application Gateway and WAF 
-   9. Azure Traffic Manager
-   10. Azure Firewall
-   11. Secure and Monitor Network 
+   6. VPN Gateway (Optional)
+   7. Azure Load Balanacer (Basic or Standard)  --> Layer 4 lb (TCP/IP and Port)
+   8. Application Gateway and WAF ---> Layer 7 lb (http/https) path based routing 
+   9. Azure Traffic Manager ---> Load balancer(multiple regions)
+   10. Azure Firewall  ---> Secure conectivity from azure to outside
+   11. Secure and Monitor Network (ampls)
    12. Secure Connection 
+        1. Private endpoint(resource to resource connection security within th n/w)
+        2. Private link Service(resource to resource connection security outside th n/w)
 
 
 ## How to Deploy Any Azure resources 
