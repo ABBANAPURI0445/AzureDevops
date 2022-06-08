@@ -9,6 +9,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   ]
   disable_password_authentication = false 
   admin_password =  "terraform@1234"
+  availability_set_id = azurerm_availability_set.avset.id 
 
   os_disk {
     caching              = "ReadWrite"

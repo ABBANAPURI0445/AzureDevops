@@ -46,6 +46,6 @@ variable "nicname" {
 }
 
 variable "pwd" {
-  
+  default = "terraform123"
 }
 
