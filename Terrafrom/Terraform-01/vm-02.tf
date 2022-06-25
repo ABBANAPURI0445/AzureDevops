@@ -1,15 +1,15 @@
-resource "azurerm_linux_virtual_machine" "vm" {
-  name                = "terraform-vm"
+resource "azurerm_linux_virtual_machine" "vm2" {
+  name                = "terraform-vm01"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   size                = "Standard_E2bds_v5"
   admin_username      = "adminuser"
   network_interface_ids = [
-    azurerm_network_interface.nic.id
+    azurerm_network_interface.nic2.id
   ]
   disable_password_authentication = false 
   admin_password = var.pwd
-  availability_set_id = azurerm_availability_set.avset.id 
+  
 
   os_disk {
     caching              = "ReadWrite"
@@ -26,7 +26,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     type     = "ssh"
     user     = "adminuser"
     password = var.pwd
-    host     = azurerm_public_ip.pipvm.ip_address
+    host     = azurerm_public_ip.pipvm01.ip_address
   }
 
   provisioner "remote-exec" {

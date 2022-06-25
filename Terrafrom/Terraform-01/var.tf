@@ -44,8 +44,13 @@ variable "nicname" {
   default = "nic-vm"
   type = string
 }
+variable "nicname2" {
+  default = "nic-vm2"
+  type = string
+}
+
 
 variable "pwd" {
-  default = "terraform123"
+  default = "Terraform@123"
 }
 

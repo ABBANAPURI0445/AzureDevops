@@ -22,6 +22,7 @@
    ```Remove-Item -Path C:\Users\nares\Desktop\Azure-Devops\AzureDevops\Terrafrom\Terraform-01\.terraform -Force```
   ``` Get-ChildItem * include * -Recurse | Remove-Item```
   ``` Remove-Item -path :\Users\nares\Desktop\Azure-Devops\AzureDevops\Terrafrom\Terraform-01\.terraform -recurse```
+  3. Graph ```terraform graph | dot -Tsvg > graph.svg```
 
 
 
