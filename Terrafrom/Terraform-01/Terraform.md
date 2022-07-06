@@ -13,6 +13,8 @@
    4. Terraform state show 
    5. Terraform state list 
    6. Terraaform state show resourcename 
+   7. terraform console 
+   8. terraform graph ``choco install graphviz -y
 
 
 ## Terraform CLI
@@ -23,6 +25,15 @@
   ``` Get-ChildItem * include * -Recurse | Remove-Item```
   ``` Remove-Item -path :\Users\nares\Desktop\Azure-Devops\AzureDevops\Terrafrom\Terraform-01\.terraform -recurse```
   3. Graph ```terraform graph | dot -Tsvg > graph.svg```
+  4. terraform console
+
+
+### Pending topics  --> after july 12th 
+   1. Output 
+   2. locals
+   3. data source
+   4. modules
+   5. interpolation and functions 
 
 
 
