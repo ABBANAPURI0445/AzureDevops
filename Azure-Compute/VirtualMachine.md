@@ -22,5 +22,5 @@
 
 ### Vm State
    1. Start
-   2. Stop: Will Impact on Ip address and Temp Disk: it change IP address and Delete and create Temp Disk
+   2. Stoped/deallocate: Will Impact on Ip address and Temp Disk: it change IP address and Delete and create Temp Disk
    3. Restart: not impact on Ip address and temp disk 
