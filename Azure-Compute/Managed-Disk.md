@@ -23,9 +23,20 @@
       3. 32, 767 GB of Storage 
       4. IOPS: 20000 
       5. Throughtput: 900 MB/s 
+   4. Ultra Disk 
+      1. used for High IO intensive Workloads such as SAP HANA , Oracle, Sql database 
+      2. it have high IOPS and Throughput 
+      3. High Speed performance 
 
 
 
 ### SnapShot: 
    1. Backup of Disk 
    2. You can restore the DataDisk using Sanpshot 
+
+### Sever Side Encryption: SSE 
+   1. PMK-Platform Managed Key: the keys managed by platform 
+   2. CMK-Customer Manged Key: the keys Securely managed Us
+        1. KeyVault -> Its a PAAS , its for Securely Storing the Keys, Certificates,Credentials
+        2. Disk Encryption Set: Privatekey and Publickey 
+   3. ADE
