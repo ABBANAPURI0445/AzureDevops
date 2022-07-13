@@ -24,3 +24,25 @@
    1. Start
    2. Stoped/deallocate: Will Impact on Ip address and Temp Disk: it change IP address and Delete and create Temp Disk
    3. Restart: not impact on Ip address and temp disk 
+
+### Custom extension script 
+   1. you can install or anything without login into Machine  
+   2. but we need Powershell or shell script file, these need to upload into storage account 
+   3. Now you can create custom extension, it present in Virtual machine blade 
+
+### Cloud init: 
+  1. [cloudinit](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-automate-vm-deployment) 
+
+### Run Command: 
+  1. You can run any command without login into Server 
+
+### Boot Diagnostics: 
+   1. all boot logs will be in storage account
+### Serial Console: 
+   1. login into Vm in portal itself 
+
+### Pending: 
+   1. create and attach managed disk in linux [mount](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal)
+   2. unmanaged disk --> create vm with Gen1
+
+   

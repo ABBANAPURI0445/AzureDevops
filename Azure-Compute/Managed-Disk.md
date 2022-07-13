@@ -39,4 +39,23 @@
    2. CMK-Customer Manged Key: the keys Securely managed Us
         1. KeyVault -> Its a PAAS , its for Securely Storing the Keys, Certificates,Credentials
         2. Disk Encryption Set: Privatekey and Publickey 
-   3. ADE
+   3. ADE  
+[Server Side Encryption](https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption) 
+
+### Shared Disk: 
+ 1. Disk: We can Attach one VM at a time ![Disk](Images\Disk.png)
+ 2. Azure File Share ---> Network Drive 
+ 3. Shared Disk: ![Shared Disk](Images/Shared-Disk.png)
+     1. You can attach multiple VM's at a time 
+     2. [Shared Disk](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-shared)
+
+### Manged vs Unmanaged Disk 
+   1. Maintain: 
+     1. Managed disk by default store storage account , its Maintained by Azure platform
+     2. Un Managed disk maintain by user 
+         1. create storage Account first 
+         2. then create Unmanaged Disk 
+   2. Price: 
+      1.  Managed Disk eg: I created Disk with 1024 GB, but I am using only 10 gb  --> need to pay for complete disk size  
+      2.  Un Managed Disk you need pay for how much you use
+  
