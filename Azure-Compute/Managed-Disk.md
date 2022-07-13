@@ -43,7 +43,7 @@
 [Server Side Encryption](https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption) 
 
 ### Shared Disk: 
- 1. Disk: We can Attach one VM at a time ![Disk](Images\Disk.png)
+ 1. Disk: We can Attach one VM at a time ![Disk](Images/Disk.png)
  2. Azure File Share ---> Network Drive 
  3. Shared Disk: ![Shared Disk](Images/Shared-Disk.png)
      1. You can attach multiple VM's at a time 
