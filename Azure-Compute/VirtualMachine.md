@@ -41,8 +41,8 @@
 ### Serial Console: 
    1. login into Vm in portal itself 
 
-### Pending: 
+### Pending: Covered 
    1. create and attach managed disk in linux [mount](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal)
    2. unmanaged disk --> create vm with Gen1
-
+ 
    

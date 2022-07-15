@@ -1,0 +1,59 @@
+trigger:
+
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+
+stages:
+- stage: TerraformValidate
+  jobs:
+    - job: TerraformValidateJob
+      continueOnError: false
+      steps:
+      - task: PublishPipelineArtifact@1
+        displayName: Publish Artifacts
+        inputs:
+          targetPath: '$(System.DefaultWorkingDirectory)/Terraform'
+          artifact: 'terraform-manifests-out'
+          publishLocation: 'pipeline'
+      - task: TerraformInstaller@0
+        displayName: Terraform Install
+        inputs:
+          terraformVersion: 'latest'
+      - task: TerraformCLI@0
+        displayName: Terraform init
+        inputs:
+          command: 'init'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+          backendType: 'local'
+       
+        
+      - task: TerraformCLI@0
+        displayName: Terraform validate
+        inputs:
+          command: 'validate'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+          allowTelemetryCollection: false 
+      
+      - task: TerraformCLI@0
+        displayName: Terraform Plan
+        inputs:
+          command: 'plan'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+          environmentServiceName: 'dev-sp'
+          providerAzureRmSubscriptionId: '9cbf6dff-2f97-4886-830d-bf3620a92698'
+          allowTelemetryCollection: false 
+      
+      - task: TerraformCLI@0
+        inputs:
+          command: 'apply'
+          workingDirectory: '$(System.DefaultWorkingDirectory)/Terraform'
+          environmentServiceName: 'dev-sp'
+          providerAzureRmSubscriptionId: '9cbf6dff-2f97-4886-830d-bf3620a92698'
+          allowTelemetryCollection: false
+      
+      
+           
+ 
