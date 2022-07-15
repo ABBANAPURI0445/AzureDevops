@@ -4,4 +4,5 @@
   3. create Azure repo 
   4. push terraform files to repo 
   5. install terraform extension on Azure DevOps [terraform Extension](https://marketplace.visualstudio.com/items?itemName=charleszipp.azure-pipelines-tasks-terraform) 
-  6. develop pipeline
+  6. develop pipeline  
+     ![AzureDevops](AzureDevOps.png)
