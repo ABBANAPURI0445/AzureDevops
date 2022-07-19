@@ -1,0 +1,32 @@
+{
+    "Name": "Naresh Abbanapuri",
+    "Age": 29,
+    "IsMarried": false,
+    "Designation": "Senior Platform Engineer",
+    "TechnologyStack": [
+        "AWS",
+        "Azure",
+        "Devops",
+        "Linux"
+    ],
+    "Expierince": {
+        "ABCCompany": {
+            "Role": "Build and relaese Engineer",
+            "TechnologyStack": [
+                "AWS",
+                "Jenkins",
+                "Docker",
+                "Kuberenetes",
+                "VMWare"
+            ],
+            "Client": "FB",
+            "Teamsize": 10,
+            "Address": {
+                "flatno": 223,
+                "location": "Jublicenavlve",
+                "opposite": "TechM",
+                "pincode": 500084
+            }
+        }
+    }
+}

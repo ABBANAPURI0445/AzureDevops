@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+stages: 
+- stage:  RUnScript
+  jobs:  
+     - job: runecho 
+       steps:
+       - script: echo Hello, world!
+         displayName: 'First Task'
+     - job: multiscript
+       steps: 
+       - script: |
+          echo Add other tasks to build, test, and deploy your project.
+          echo See https://aka.ms/yaml 
+          sudo appt-get update
+         displayName: 'Second Task'

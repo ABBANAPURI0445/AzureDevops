@@ -1,0 +1,30 @@
+--- 
+ Name: "Naresh Abbanapuri"
+ Age: 29 
+ Sal: xxxxx.xxx 
+ Designation: "Senior Platform Engineer" 
+ IsMarried: false 
+ TechnologyStack: ["AWS","Azure","Devops","Linux"]
+ Expierince: 
+   ABCCompany: 
+    Role: "Build and relaese Engineer" 
+    TechnologyStack: ["AWS","Jenkins","Docker","Kuberenetes","VMWare"]
+    Client: FB
+    Teamsize: 10
+    Address: 
+       flatno: 223
+       location: "Jublicenavlve" 
+       opposite: "TechM"
+       pincode: 500084 
+   XYZCompany: 
+     Role: "Senior Platform Engineer" 
+     TechnologyStack: ["Azure","Terraform","AzureDevOps","Packer","Ansible"]
+     ProjectName: "Cloud Migration" 
+     Address: 
+       flatno: 223
+       location: "Jublicenavlve" 
+       opposite: "TechM"
+       pincode: 500084 
+
+
+     
