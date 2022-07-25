@@ -1,0 +1,22 @@
+---
+- hosts: all 
+  become: yes
+  tasks: 
+  - name: install tomcat9 on ubunt [in shell apt-get update & apt-get install tomcat9 -y]
+    ansible.builtin.apt: 
+      update_cache: yes
+      name: tomcat9 
+      state: present  
+  - name: install git [sudo apt-get install git -y]
+    ansible.builtin.apt:
+      name: git
+      state: present 
+  - name: install tree on ubunt  [install git [sudo apt-get install tree -y] 
+    ansible.builtin.apt: 
+      name: tree
+      state: present  
+  - name: install nginx on ubuntu
+    ansible.builtin.apt:
+      name: nginx 
+      state: present 
+      

@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    az login --service-principal -u f0c456e1-0e0d-4521-a59e-c28227a29548 -p qbz8Q~ERUmVQPYSd.lywFuaMvuuT2iZg.DfMobTg --tenant c9f06d72-d0c9-4779-9036-b8ef09f162e3
+    az group create --location "eastus2" --name "rgcli-02"
+    az network vnet create -g rgcli-02 -n vnetcli --address-prefix 192.168.0.0/24 --subnet-name subnet-cli-01 --subnet-prefix 192.168.0.0/27 -l westus2
+    az network vnet subnet create --address-prefixes 192.168.0.32/27 -n subnet-cli-02 -g rgcli-02 --vnet-name vnetcli
+
+  displayName: 'Run a multi-line script'

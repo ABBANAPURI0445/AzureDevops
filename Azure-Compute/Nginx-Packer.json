@@ -1,0 +1,30 @@
+{
+    "builders": [{
+      "type": "azure-arm",
+  
+      "use_azure_cli_auth": true,
+  
+      "managed_image_resource_group_name": "Compute-RG",
+      "managed_image_name": "app02",
+  
+      "os_type": "Linux",
+      "image_publisher": "Canonical",
+      "image_offer": "UbuntuServer",
+      "image_sku": "18.04-LTS",
+
+  
+      "location": "East US2",
+      "vm_size": "Standard_E2bds_v5"
+    }],
+    "provisioners": [{
+      
+      "inline": [
+        "sudo apt-get update",
+        "sudo apt-get -y install nginx",
+        "sudo apt-get install tomcat9 -y",
+        "sudo mkdir Hello-Packer"
+      ],
+      "inline_shebang": "/bin/sh -x",
+      "type": "shell"
+    }]
+  }

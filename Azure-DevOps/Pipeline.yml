@@ -22,3 +22,6 @@ stages:
           echo See https://aka.ms/yaml 
           sudo appt-get update
          displayName: 'Second Task'
+
+
+az ad sp create-for-rbac --role Contributor --scopes /subscriptions/9cbf6dff-2f97-4886-830d-bf3620a92698 --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"

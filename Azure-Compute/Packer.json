@@ -1,0 +1,42 @@
+{ 
+  
+    "variables": {
+     "location": "eastus2",
+     "image": "UbuntuServer",
+     "rg": "Compute-RG",
+     "size": "Standard_E2bds_v5",
+     "version": "01"
+    },
+
+    "builders": [{
+      "type": "azure-arm",
+  
+      "client_id": "f0c456e1-0e0d-4521-a59e-c28227a29548",
+      "client_secret": "qbz8Q~ERUmVQPYSd.lywFuaMvuuT2iZg.DfMobTg",
+      "tenant_id": "c9f06d72-d0c9-4779-9036-b8ef09f162e3",
+      "subscription_id": "9cbf6dff-2f97-4886-830d-bf3620a92698",
+  
+      "managed_image_resource_group_name": "{{user `rg`}}",
+      "managed_image_name": "app{{user `version`}}",
+  
+      "os_type": "Linux",
+      "image_publisher": "Canonical",
+      "image_offer": "{{user `image`}}",
+      "image_sku": "18.04-LTS",
+
+  
+      "location": "{{user `location`}}",
+      "vm_size": "{{user `size`}}"
+    }],
+    "provisioners": [{
+      
+      "inline": [
+        "sudo apt-get update",
+        "sudo apt-get upgrade -y",
+        "sudo apt-get -y install nginx",
+        "mkdir Hello-Packer"
+      ],
+      "inline_shebang": "/bin/sh -x",
+      "type": "shell"
+    }]
+  }

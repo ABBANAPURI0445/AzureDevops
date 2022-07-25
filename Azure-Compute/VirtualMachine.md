@@ -43,6 +43,12 @@
 
 ### Pending: Covered 
    1. create and attach managed disk in linux [mount](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/attach-disk-portal)
-   2. unmanaged disk --> create vm with Gen1
+   2. unmanaged disk --> create vm with Gen1  
+
+
+
+
+#### Pending 
+   1. App Service 
  
    

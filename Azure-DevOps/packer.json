@@ -1,0 +1,8 @@
+- job: multiscript
+steps: 
+- script: |
+   az login
+   az ad sp create-for-rbac --role Contributor --scopes /subscriptions/9cbf6dff-2f97-4886-830d-bf3620a92698 --query "{ client_id: appId, client_secret: password, tenant_id: tenant }"
+  displayName: 'Second Task'
+
+  /subscriptions/9cbf6dff-2f97-4886-830d-bf3620a92698/resourceGroups/Compute-RG/providers/Microsoft.Compute/images/myPackerImage
