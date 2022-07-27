@@ -1,0 +1,80 @@
+---
+- hosts: all 
+  become: yes
+  tasks: 
+  - name: install java8 on ubuntu 
+    ansible.builtin.apt:
+      name: openjdk-8-jdk
+      state: present
+  - name: add java env variable 
+    ansible.builtin.lineinfile:
+      path: /etc/environment
+      line: JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+      create: yes  
+  - name: Ensure group "somegroup" exists
+    ansible.builtin.group:
+      name: tomcat
+      state: present
+  - name: create tomcat user
+    ansible.builtin.user:
+      name: tomcat
+      state: present
+      home: /opt/tomcat
+      shell: /bin/false 
+      group: tomcat  
+  - name: create /opt/tomcat 
+    ansible.builtin.file:
+      path: /opt/tomcat
+      state: directory
+      mode: '0755'
+      recurse: yes
+      owner: tomcat
+      group: tomcat
+  - name: download tomcat binary and unachive the binary 
+    ansible.builtin.unarchive:
+      src: https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
+      dest: /opt/tomcat
+      remote_src: yes 
+      extra_opts:
+       - --strip-components=1
+  - name: chnage mode g+rx 
+    ansible.builtin.file:
+      path: /opt/tomcat/conf
+      state: directory 
+      mode: g+rx
+      recurse: yes
+  - name: insert service file into  /etc/systemd/system/tomcat.service
+    ansible.builtin.copy:
+      src: tomcat.service
+      dest: /etc/systemd/system/tomcat.service 
+  - name: demon-reload 
+    command: sudo systemctl daemon-reload 
+  
+  - name: restart tomcat and enable tomcat
+    ansible.builtin.systemd:
+      name: tomcat
+      state: restarted
+      enabled: yes
+  - name: Configure Tomcat Web Management Interface user - insert tomcat-users.xml content in /opt/tomcat/conf/tomcat-users.xml  
+    ansible.builtin.copy:
+      src: tomcat-users.xml
+      dest: /opt/tomcat/conf/tomcat-users.xml
+  - name: Manager app permissions /opt/tomcat/webapps/manager/META-INF/context.xml, we comment 2 lines  
+    ansible.builtin.copy:
+      src: context.xml
+      dest: /opt/tomcat/webapps/manager/META-INF/context.xml 
+  - name: Host Manager app permissions context.xml 
+    ansible.builtin.copy:
+      src: context.xml
+      dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml 
+  - name: restart tomcat 
+    ansible.builtin.systemd:
+      name: tomcat
+      state: restarted
+  
+    
+    
+    
+  
+  
+  

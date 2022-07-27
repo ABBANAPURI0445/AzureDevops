@@ -1,6 +1,6 @@
 ---
 - hosts: all 
-  become: yes
+  become: yes 
   tasks: 
   - name: install tomcat9 on ubunt [in shell apt-get update & apt-get install tomcat9 -y]
     ansible.builtin.apt: 
