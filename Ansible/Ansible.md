@@ -17,3 +17,13 @@
                 1. Control Server - WorkStation 
                 2. Nodes -- Where we deploy or patch , installation happen  
 
+
+### Key Note
+  1. Default inventory location ```/etc/ansible/hosts``` 
+  2. ansible command for default Inventory ```ansible-playbook playbook.yml``` 
+  3. We can use custom inventory eg myiventory ```ansible-playbook -i myinventory playbook.yml```  
+  4. Addhoc command to ping  ```ansible -m ping all   and ansible -m ping -i myinventory all``` 
+  5. Some Modules not Indempotent in ansible 
+      1. command 
+      2. Shell
+      3. raw 

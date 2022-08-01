@@ -39,30 +39,18 @@
       remote_src: yes 
       extra_opts:
        - --strip-components=1
-  - name: chnage mode g+rx 
-    ansible.builtin.file:
-      path: /opt/tomcat/conf
-      state: directory 
-      mode: g+rx
-      recurse: yes 
-  - name: chnage owner to tomcat 
-    ansible.builtin.file:
-      path: "{{ item }}"
-      state: directory
-      recurse: yes  
-    loop: 
-     - /opt/tomcat/webapps/ 
-     - /opt/tomcat/work/
-     - /opt/tomcat/temp/
-     - /opt/tomcat/logs/ 
-    become: true
+  - name: permssions 
+    shell: |
+      sudo chgrp -R tomcat /opt/tomcat
+      sudo chmod -R g+r /opt/tomcat/conf 
+      sudo chmod g+x /opt/tomcat/conf 
+      sudo chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs
   - name: insert service file into  /etc/systemd/system/tomcat.service
     ansible.builtin.copy:
       src: tomcat.service
       dest: /etc/systemd/system/tomcat.service 
   - name: demon-reload 
     command: sudo systemctl daemon-reload 
-  
   - name: restart tomcat and enable tomcat
     ansible.builtin.systemd:
       name: tomcat
