@@ -1,0 +1,22 @@
+---
+- hosts: all
+  vars: 
+    package_name: apache2
+    package_centos_name: httpd
+  become: yes 
+  tasks:
+  - name: install Apache2 on ubuntu 
+    ansible.builtin.apt:
+      name: "{{package_name}}"
+      state: present 
+    when: ansible_os_family == "Debian" 
+  - name: install https on centos 
+    ansible.builtin.yum:
+      name: "{{package_centos_name}}"
+      state: present 
+    when: ansible_os_family == "RedHat"
+  - name: start httpd service 
+    ansible.builtin.service:
+      name: "{{package_centos_name}}"
+      state: started
+    when: ansible_os_family == "RedHat"

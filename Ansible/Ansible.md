@@ -27,3 +27,13 @@
       1. command 
       2. Shell
       3. raw 
+
+### Concepts
+  1. Setup one more node - Centos 
+  2. When conditions 
+  3. Variables 
+  
+### When Condition
+  1. write playbook for Apache2 on both platform Ubuntu and Centos 
+  2. in ubuntu ```apt-get install apache2```
+  3. in Centos ```yum install httpd``` 

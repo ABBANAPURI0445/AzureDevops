@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes 
+  tasks:
+  - name: install Apache2 on ubuntu 
+    ansible.builtin.apt:
+      name: apache2
+      state: present 
+    when: ansible_os_family == "Debian" 
+  - name: install https on centos 
+    ansible.builtin.yum:
+      name: httpd
+      state: present 
+    when: ansible_os_family == "RedHat"
+  - name: start httpd service 
+    ansible.builtin.service:
+      name: httpd
+      state: started
+    when: ansible_os_family == "RedHat"
