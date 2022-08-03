@@ -47,7 +47,7 @@ package_rhel=tree
   2. ```mkdir group_vars``` and create file ```touch ubuntu``` and ```touch centos```
   3. create varaible in side file 
   4. and define in playbook using jinja format 
-  5. Please refer below Image
+  5. Please refer above Image
    ![Vars](../Images/Vars.PNG) 
 
 
