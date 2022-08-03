@@ -48,7 +48,7 @@ package_rhel=tree
   3. create varaible in side file 
   4. and define in playbook using jinja format 
   5. Please refer below Image
-  6. ![Vars](../Images/Vars.PNG) 
+   ![Vars](../Images/Vars.PNG) 
 
 
 
