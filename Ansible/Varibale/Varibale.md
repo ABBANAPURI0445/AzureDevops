@@ -33,6 +33,20 @@ package_name=git
 [centos:vars]
 package_rhel=tree 
 
-```
+``` 
+1. Note: Precendence In Inventory host vars and inventory group vars = always wins hostvars 
+
+## hostvars: 
+   1. just create folder with host_vars and inside create file with Hostname(ipaddress or fqdn) 
+   2. ```mkdir host_vars``` and create file ```touch 10.1.0.5``` 
+   3. create varaible in side file 
+   4. and define in playbook using jinja format
+
+## groupvars: 
+  1. just create folder name with group_vars and inside create file name with gropname eg ubuntu and centos 
+  2. ```mkdir group_vars``` and create file ```touch ubuntu``` and ```touch centos```
+  3. create varaible in side file 
+  4. and define in playbook using jinja format
+
 
 

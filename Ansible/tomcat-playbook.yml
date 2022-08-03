@@ -45,7 +45,7 @@
       state: directory 
       mode: g+rx
       recurse: yes 
-  - name: chnage owner to tomcat 
+  - name: change owner to tomcat 
     ansible.builtin.file:
       path: "{{ item }}"
       state: directory
