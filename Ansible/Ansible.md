@@ -36,4 +36,15 @@
 ### When Condition
   1. write playbook for Apache2 on both platform Ubuntu and Centos 
   2. in ubuntu ```apt-get install apache2```
-  3. in Centos ```yum install httpd``` 
+  3. in Centos ```yum install httpd```  
+
+### Variables places
+  1. Playbooks vars
+  2. commandline
+  3. Inventory file 
+       1. host vars
+       2. groups vars
+  4. host_vars
+  5. group_vars 
+  please refer [ansible_variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
+  
