@@ -20,7 +20,7 @@
      systemctl restart sshd
      ``` 
    6. Assign Sudo permssion 
-      ``
+      ```
       visudo or vi /etc/sudoers
       add user 
       ``` 

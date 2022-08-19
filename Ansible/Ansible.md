@@ -47,4 +47,50 @@
   4. host_vars
   5. group_vars 
   please refer [ansible_variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
+
+
+### Topics
+   1. Ansible Modules 
+    1. apt
+    2. yum
+    3. file  --> file and directory
+    4. copy
+    5. template
+    6. archive
+    7. command, shell and raw --not idempotent 
+    8. user and group 
+    9. service or systemctl 
+    10. dnf 
+    11. win_chocoletey
+    12. win_file
+    13. win_copy 
+    14. win_command
+   [please_refer_link](https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html)
+   2. File and template 
+       1. File contains static content 
+       2. Template contains dynamic content 
+   3. Ansible roles  
+   4. custom facts
+   5. ansible config 
+   6. install multiple package at a time 
+         1. Loop
+         2. with_items 
+         3. ["git","tree","wget"] 
+
+
+#### 
+  1. Virtual Machine 
+     1. Azure Virtual Machine  -- Azure
+        1. H/w -- cpu and ram 
+        2. HDD disk 
+        3. OS Image --eg ubuntu centos winodws
+        4. authentication 
+              1. username and password --> only in Azure
+              2. SSH keys --> Azure Aws GCP 
+        5. Networking [vnet in azure  vpc in aws and gcp]
+            1. Subnet
+            2. Security groups
+     2. EC2(Elastic Compute cloud) -- AWS 
+     3. Compute Engine -- GCP 
+
   
