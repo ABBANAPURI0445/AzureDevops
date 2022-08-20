@@ -75,7 +75,8 @@
    6. install multiple package at a time 
          1. Loop
          2. with_items 
-         3. ["git","tree","wget"] 
+         3. ["git","tree","wget"]  
+   7. Handler 
 
 
 #### 
