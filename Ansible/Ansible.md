@@ -50,7 +50,7 @@
 
 
 ### Topics
-   1. Ansible Modules 
+1. Ansible Modules 
      1. apt
      2. yum
      3. file  --> file and directory
@@ -69,21 +69,21 @@
      16. block in file [clickhere](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/blockinfile_module.html)
      17. replace[clickhere](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/replace_module.html)
     [please_refer_link](https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html)
-  2. File and template 
+2. File and template 
        1. File contains static content 
        2. Template contains dynamic content 
-  3. Ansible roles  --- pending 
-  4. custom facts and when_failed --- Pending 
-  5. ansible config 
-  6. install multiple package at a time 
+3. Ansible roles  --- pending 
+4. custom facts and when_failed --- Pending 
+5. ansible config 
+6. install multiple package at a time 
          1. Loop
          2. with_items 
          3. ["git","tree","wget"]  
-  7. Handler *
-  8. raw and command, shell module -- make it idempotent
-  9. Block in ansible [Clickhere](https://docs.ansible.com/ansible/latest/user_guide/playbooks_blocks.html)
-  10. Ansible Tower [Clickhere](https://www.redhat.com/sysadmin/intro-ansible-tower#:~:text=Ansible%20Tower%20is%20the%20enterprise,and%20running%20in%20your%20environments.)
-  11. tags 
+7. Handler *
+8. raw and command, shell module -- make it idempotent
+9. Block in ansible [Clickhere](https://docs.ansible.com/ansible/latest/user_guide/playbooks_blocks.html)
+10.  Ansible Tower [Clickhere](https://www.redhat.com/sysadmin/intro-ansible-tower#:~:text=Ansible%20Tower%20is%20the%20enterprise,and%20running%20in%20your%20environments.)
+11.  tags 
 
 
 #### 
