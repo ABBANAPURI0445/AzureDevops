@@ -1,0 +1,14 @@
+  - hosts: all  
+    become: yes
+    tasks: 
+    - name: install nginx on ubuntu
+      apt: 
+        name: nginx
+        state: present 
+      notify: restart nginx
+    
+    handlers: 
+    - name: restart nginx 
+      service: 
+        name: nginx 
+        state: restarted

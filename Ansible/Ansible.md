@@ -65,18 +65,25 @@
     12. win_file
     13. win_copy 
     14. win_command
+    15. line in file [clickhere](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html)
+    16. block in file [clickhere](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/blockinfile_module.html)
+    17. replace[clickhere](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/replace_module.html)
    [please_refer_link](https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html)
    2. File and template 
        1. File contains static content 
        2. Template contains dynamic content 
-   3. Ansible roles  
-   4. custom facts
+   3. Ansible roles  --- pending 
+   4. custom facts and when_failed --- Pending 
    5. ansible config 
    6. install multiple package at a time 
          1. Loop
          2. with_items 
          3. ["git","tree","wget"]  
-   7. Handler 
+   7. Handler *
+   8. raw and command, shell module -- make it idempotent
+   9. Block in ansible [Clickhere](https://docs.ansible.com/ansible/latest/user_guide/playbooks_blocks.html)
+   10. Ansible Tower [Clickhere](https://www.redhat.com/sysadmin/intro-ansible-tower#:~:text=Ansible%20Tower%20is%20the%20enterprise,and%20running%20in%20your%20environments.)
+   11. tags 
 
 
 #### 
@@ -93,5 +100,18 @@
             2. Security groups
      2. EC2(Elastic Compute cloud) -- AWS 
      3. Compute Engine -- GCP 
+
+
+#### Make idempotent -- RAW, Shell, Command 
+  1. Please refer stat.yml playbook 
+  
+
+
+
+
+
+
+  
+    
 
   

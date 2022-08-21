@@ -1,0 +1,33 @@
+---
+- hosts: all
+  become: yes    
+  tasks:
+  - name: Check that the file exists
+    stat:
+      path: /home/ansible/raw.txt
+    register: state
+  - name: Create the file, if it doesnt exist already
+    command: /home/ansible/raw.txt 
+    when: not state.stat.exists 
+
+- hosts: all
+  become: yes
+  tasks: 
+   - name: Check that the /home/ansible/logic exists
+    stat:
+      path: /home/ansible/logic
+    register: logic
+  - name: change permission 
+    shell: | 
+      sudo chgrp -R tomcat /opt/tomcat
+      sudo chmod -R g+r /opt/tomcat/conf 
+      sudo chmod g+x /opt/tomcat/conf 
+      sudo chown -R tomcat /opt/tomcat/webapps/ /opt/tomcat/work/ /opt/tomcat/temp/ /opt/tomcat/logs
+    when: not logic.stat.exists 
+  - name: create file 
+    file: 
+     path: /home/ansible/logic 
+     state: touch 
+ 
+
+   
