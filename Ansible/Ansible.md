@@ -83,7 +83,16 @@
 8. raw and command, shell module -- make it idempotent
 9. Block in ansible [Clickhere](https://docs.ansible.com/ansible/latest/user_guide/playbooks_blocks.html)
 10.  Ansible Tower [Clickhere](https://www.redhat.com/sysadmin/intro-ansible-tower#:~:text=Ansible%20Tower%20is%20the%20enterprise,and%20running%20in%20your%20environments.)
-11.  tags 
+11.  tags '
+12.  include_task
+13.  import_task
+14.  include_vars -- refer geerling guy roles
+
+{{ ansible_distribution }}-{{ ansible_distribution_version.split('.')[0] }}.yml
+ubuntu-20.04.yml
+
+
+ansible -i ../../../inventory all -m ansible.builtin.setup -a 'filter=ansible_distribution_version*'
 
 
 #### 

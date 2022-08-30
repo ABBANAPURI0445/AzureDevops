@@ -15,10 +15,6 @@
     ansible.builtin.file:
       path: /opt/tomcat
       state: directory
-      mode: '0755'
-      recurse: yes
-      owner: tomcat
-      group: tomcat
   - name: Ensure group "somegroup" exists
     ansible.builtin.group:
       name: tomcat
@@ -41,6 +37,8 @@
        - --strip-components=1
   - name: permssions 
     shell: |
+      curl -O https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
+      sudo tar xzvf apache-tomcat-*tar.gz -C /opt/tomcat --strip-components=1
       sudo chgrp -R tomcat /opt/tomcat
       sudo chmod -R g+r /opt/tomcat/conf 
       sudo chmod g+x /opt/tomcat/conf 
