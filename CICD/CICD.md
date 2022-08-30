@@ -59,7 +59,7 @@
    deploy war file(use get_url ansible module) ---> download the war file from artifactory and deploy into Server 
    GCP
    ```` 
-   1. Test --> Web servers and app servers, DB Servers and other services
-   2. NPRD  ---> Web servers and app servers, DB Servers and other services
-   3. Prod  ---> Web servers and app servers, DB Servers and other services
+ 2. Test --> Web servers and app servers, DB Servers and other services
+ 3. NPRD  ---> Web servers and app servers, DB Servers and other services
+ 4. Prod  ---> Web servers and app servers, DB Servers and other services
 
