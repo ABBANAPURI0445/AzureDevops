@@ -44,7 +44,7 @@
 ### JAVA Manual build using Maven 
   1. Clone java code spring pet-clinic ```git clone https://github.com/spring-projects/spring-petclinic.git``` 
   2. check the pom.xml and get into that directory 
-  3. build code using Maven ``` mvn package```  
+  3. build code using Maven install ``` mvn package```  
   4. it will generate war/ear/jar file 
   5. war/ear deploy in Application Server Tomcat/Weblogic/Websphere etc..
   6. Deploy executable jar ```java -jar *.jar``` 
