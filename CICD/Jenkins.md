@@ -42,6 +42,7 @@
 
 
 ### JAVA Manual build using Maven 
+#### Spring-PetClinic
   1. Clone java code spring pet-clinic ```git clone https://github.com/spring-projects/spring-petclinic.git``` 
   2. check the pom.xml and get into that directory 
   3. build code using Maven ``` mvn package```  
@@ -49,7 +50,7 @@
   5. war/ear deploy in Application Server Tomcat/Weblogic/Websphere etc..
   6. Deploy executable jar ```java -jar *.jar``` 
     
-### EG-02
+#### Game-of-life
   1. Clone gameoflife java code ```git clone https://github.com/wakaleo/game-of-life.git``` 
   2. build using ```mvn install``` command
   3. install tomcat9 ```sudo apt-get install tomcat9 -y```
