@@ -1,5 +1,5 @@
 ### Terminalogy and Technology 
-  1. Version control System --> git
+  1. Version control System --> git 
   2. Remote repository --> github 
   3. static code analysis --> sonarqube and veracode
   4. artifactory --> Jfrog artifactory and nexus war,ear and jar
@@ -8,7 +8,7 @@
   7. continues integration and continues delivery/deployment (CICD)
   8. Agile --> faster 
 
-### CICD oldage Process
+### CICD oldage Process 
   1. How the Software development process happen in olden days 
       1. Gathering requirement ---> finance and users , User Interface , downtime, latency 
       2. planing --> java spring boot, maven, Sq, jfrg, jenkins,git,github,Ansible,Terraform,ARM Template, web server- nginx, Application server - Tomcat or Websphere or Weblogic , and budget planing 
@@ -62,4 +62,13 @@
  2. Test --> Web servers and app servers, DB Servers and other services
  3. NPRD  ---> Web servers and app servers, DB Servers and other services
  4. Prod  ---> Web servers and app servers, DB Servers and other services
+
+
+
+
+
+ #####
+ 1. Developer develop the code and push to the repository 
+ 2. End user dosent want code -- Application 
+ 3. COnvert code into Application -- Using Build tool MAVEN 
 
