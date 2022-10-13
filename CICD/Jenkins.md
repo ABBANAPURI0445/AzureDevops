@@ -53,5 +53,5 @@
   1. Clone gameoflife java code ```git clone https://github.com/wakaleo/game-of-life.git``` 
   2. build using ```mvn install``` command
   3. install tomcat9 ```sudo apt-get install tomcat9 -y```
-  4. deploy application in tomcat webapps directory ```cp game-of-life.war /var/lib/tomcat9/webapps/``` 
+  4. deploy application in tomcat webapps directory ```cp gameoflife.war /var/lib/tomcat9/webapps/``` 
 
