@@ -50,9 +50,17 @@
   5. war/ear deploy in Application Server Tomcat/Weblogic/Websphere etc..
   6. Deploy executable jar ```java -jar *.jar``` 
     
-#### Game-of-life
+#### Game-of-life - Generic Steps 
   1. Clone gameoflife java code ```git clone https://github.com/wakaleo/game-of-life.git``` 
   2. build using ```mvn install``` command
   3. install tomcat9 ```sudo apt-get install tomcat9 -y```
   4. deploy application in tomcat webapps directory ```cp gameoflife.war /var/lib/tomcat9/webapps/``` 
+  5. Deploy Application in DEV Environment and next deploy into Test Environment if all test cases pass then deploy into Staging Environment. 
+  6. Finally Application Deploy into Production 
 
+
+
+LDAP -- Acive Directory 100 --> User database --> Jenkins
+
+
+drwxr-xr-x  9 jenkins jenkins 4096 Oct 13 04:52 gameoflife/
