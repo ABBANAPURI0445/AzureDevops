@@ -11,7 +11,7 @@
 
 
 
-## Crons 
+## KeyNote
   1. Jenkins not only for CICD. you can schedule anything or assign work eg: start Azure VM at 9 am and stop at 7 pm ---> 
    ```
     1. step 1: Create Jenkins Job 
