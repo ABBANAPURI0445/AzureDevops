@@ -38,9 +38,7 @@
 
 
 ### LabSetup CD with Terraform  
- 1. Launch EC2 instance t2.micro 
- 2. Login into EC2 and install Jenkins 
- 3. Setup Jenkins Console 
- 4. Launch one one EC2 Machine t2.micro and install Terraform.  
- 5. Come to Jenkins UI and Configure Master Slave(Terraform). ```ssh-copy-id terraform@privateofansiblecontrolserver``` 
- 6. create job -- Freestyle 
+ 1. Setup Jenkins Console 
+ 2. Launch one one EC2 Machine t2.micro and install Terraform.  
+ 3. Come to Jenkins UI and Configure Master Slave(Terraform). ```ssh-copy-id terraform@privateofansiblecontrolserver``` 
+ 4. create job -- Freestyle 
