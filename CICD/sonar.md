@@ -45,7 +45,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
  ## SonarQube Setup
 
 2. Download [soarnqube](https://www.sonarqube.org/downloads/) and extract it.   
-  ```sh 
+  ```
   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
   apt install unzip
   unzip sonarqube-8.9.2.46101.zip
@@ -109,8 +109,8 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 ### Sonarqube Integrate with jenkins 
   1. goto Jenkins UI 
   2. Manage jenkins 
-  3. install sonarqube 
-  4. and add all details about sonarqube 
+  3. install sonarqube plugin
+  4. go Manage Jenkins --> configure system and add all details about sonarqube 
       1. Token: b41607e716d57287470e85e1f11d90ee5638e3bf  
       2. sonar url: http://ec2-50-17-129-41.compute-1.amazonaws.com:9000/ 
       3. Name: sonaqube 
