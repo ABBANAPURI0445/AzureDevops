@@ -104,7 +104,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   1. Take ubuntu Machine
   2. install postgress
   3. Install sonarqube 
-  4. open sonar in browser: http:/publiip:9000 
+  4. open sonar in browser: http:/publiip:9000  username/password: admin/admin
 
 ### Sonarqube Integrate with jenkins 
   1. goto Jenkins UI 
