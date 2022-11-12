@@ -52,7 +52,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   mv sonarqube-8.9.2.46101.zip sonarqube
   ```
 
-1. in `/opt/sonarqube/` Update sonar.properties with below information 
+1. in `/opt/sonarqube/` Update sonar.properties with below information `vi /opt/sonarqube/conf/sonar.properties` 
   ```
   sonar.jdbc.username=sonar
   sonar.jdbc.password=admin 
