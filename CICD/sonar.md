@@ -63,7 +63,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   #sonar.search.javaOpts=-Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError
   ``` 
 
-1. Create a `/etc/systemd/system/sonarqube.service` file start sonarqube service at the boot time 
+1. Create a `vi /etc/systemd/system/sonarqube.service` file start sonarqube service at the boot time 
   ```
   [Unit]
   Description=SonarQube service
