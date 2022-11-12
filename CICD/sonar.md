@@ -47,10 +47,12 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 2. Download [soarnqube](https://www.sonarqube.org/downloads/) and extract it.   
   ```sh 
   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
+  apt install unzip
   unzip sonarqube-8.9.2.46101.zip
+  mv sonarqube-8.9.2.46101.zip sonarqube
   ```
 
-1. in `/opr/sonarqube/` Update sonar.properties with below information 
+1. in `/opt/sonarqube/` Update sonar.properties with below information 
   ```
   sonar.jdbc.username=sonar
   sonar.jdbc.password=admin 
