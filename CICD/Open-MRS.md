@@ -18,5 +18,4 @@
            2. Install Tomcat
            3. Install Mysql Database 
            4. Connection String. 
-           5. Deployment Application.  
-  ![CICD](CICD.png)
+           5. Deployment Application.  ![CICD](CICD.png)
