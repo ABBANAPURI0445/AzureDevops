@@ -35,7 +35,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   ``` 
 
 1. Restart postgres database to take latest changes effect 
-  ```sh 
+  ```
   systemctl restart postgresql 
   systemctl status postgresql
   ```
@@ -88,13 +88,13 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   ```
 
 1. Add sonar user and grant ownership to /opt/sonarqube directory 
-  ```sh 
+  ```
   useradd -d /opt/sonarqube sonar   --- user creation for specific home direct 
   chown -R sonar:sonar /opt/sonarqube 
   ```
 
 1. Reload the demon and start sonarqube service 
-  ```sh 
+  ```
   systemctl daemon-reload 
   systemctl start sonarqube.service 
   ```
