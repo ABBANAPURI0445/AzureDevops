@@ -49,7 +49,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
   apt install unzip
   unzip sonarqube-8.9.2.46101.zip
-  mv sonarqube-8.9.2.46101.zip sonarqube
+  mv sonarqube-8.9.2.46101 sonarqube
   ```
 
 1. in `/opt/sonarqube/` Update sonar.properties with below information `vi /opt/sonarqube/conf/sonar.properties` 
