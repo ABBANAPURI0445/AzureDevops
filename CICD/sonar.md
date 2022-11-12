@@ -52,7 +52,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   mv sonarqube-8.9.2.46101 sonarqube
   ```
 
-1. in `/opt/sonarqube/` Update sonar.properties with below information `vi /opt/sonarqube/conf/sonar.properties` 
+1. open the file and update below info  `vi /opt/sonarqube/conf/sonar.properties` 
   ```
   sonar.jdbc.username=sonar
   sonar.jdbc.password=admin 
@@ -105,7 +105,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
   2. install java
   3. install postgress
   4. Install sonarqube 
-  5. open sonar in browser: http:/publiip:9000  username/password: admin/admin
+  5. open sonar in browser: http:/publiip:9000  username/password: admin/admin 
 
 ### Sonarqube Integrate with jenkins 
   1. goto Jenkins UI 
