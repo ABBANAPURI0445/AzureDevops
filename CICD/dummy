@@ -1,0 +1,123 @@
+drwxr-xr-x 4 jenkins jenkins 4096 Nov 14 04:36 ./
+drwxr-xr-x 3 jenkins jenkins 4096 Nov 14 04:36 ../
+-rw-r--r-- 1 jenkins jenkins  271 Nov  9 04:50 com.cloudbees.hudson.plugins.folder.config.AbstractFolderConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins 1691 Nov 14 04:32 config.xml
+-rw-r--r-- 1 jenkins jenkins 2287 Nov  9 04:50 credentials.xml
+-rw-r--r-- 1 jenkins jenkins  135 Nov  9 04:50 github-plugin-configuration.xml
+-rw-r--r-- 1 jenkins jenkins  156 Nov 14 04:32 hudson.model.UpdateCenter.xml
+-rw-r--r-- 1 jenkins jenkins  238 Nov  9 04:50 hudson.plugins.build_timeout.global.GlobalTimeOutConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  250 Nov  9 04:50 hudson.plugins.build_timeout.operations.BuildStepOperation.xml
+-rw-r--r-- 1 jenkins jenkins 1476 Nov  9 04:50 hudson.plugins.emailext.ExtendedEmailPublisher.xml
+-rw-r--r-- 1 jenkins jenkins  630 Nov  9 04:50 hudson.plugins.git.GitSCM.xml
+-rw-r--r-- 1 jenkins jenkins  371 Oct 28 04:16 hudson.plugins.git.GitTool.xml
+-rw-r--r-- 1 jenkins jenkins  331 Nov  9 04:50 hudson.plugins.gradle.injection.InjectionConfig.xml
+-rw-r--r-- 1 jenkins jenkins  930 Nov  9 04:50 hudson.plugins.sonar.SonarGlobalConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  382 Nov  9 04:50 hudson.plugins.timestamper.TimestamperConfig.xml
+-rw-r--r-- 1 jenkins jenkins  262 Nov  9 04:50 hudson.tasks.Mailer.xml
+-rw-r--r-- 1 jenkins jenkins   76 Nov  9 04:50 hudson.tasks.Shell.xml
+-rw-r--r-- 1 jenkins jenkins  216 Nov  9 04:50 hudson.triggers.SCMTrigger.xml
+-rw-r--r-- 1 jenkins jenkins 9985 Nov 14 04:36 installedPlugins.xml
+-rw-r--r-- 1 jenkins jenkins  297 Nov  9 04:50 io.jenkins.plugins.junit.storage.JunitTestResultStorageConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  277 Nov  9 04:50 jenkins.fingerprints.GlobalFingerprintConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  159 Nov  9 04:50 jenkins.model.ArtifactManagerConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  253 Nov  9 04:50 jenkins.model.GlobalBuildDiscarderConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  292 Nov  9 04:50 jenkins.model.JenkinsLocationConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins   86 Nov  9 04:50 jenkins.security.ResourceDomainConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  179 Nov  9 04:50 jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins  171 Oct 28 04:12 jenkins.telemetry.Correlator.xml
+drwxr-xr-x 9 jenkins jenkins 4096 Nov 14 04:36 jobs/
+-rw-r--r-- 1 jenkins jenkins  907 Nov 14 04:32 nodeMonitors.xml
+-rw-r--r-- 1 jenkins jenkins  289 Nov  9 04:50 org.jenkinsci.plugins.github_branch_source.GitHubConfiguration.xml
+-rw-r--r-- 1 jenkins jenkins   46 Nov  9 04:51 org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+-rw-r--r-- 1 jenkins jenkins  169 Nov  9 04:50 org.jenkinsci.plugins.workflow.flow.GlobalDefaultFlowDurabilityLevel.xml
+-rw-r--r-- 1 jenkins jenkins  229 Nov  9 04:50 org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
+-rw-r--r-- 1 jenkins jenkins  386 Nov 12 12:31 scriptApproval.xml
+-rw-r--r-- 1 jenkins jenkins 1028 Nov 14 04:36 thinBackup.xml
+drwxr-xr-x 3 jenkins jenkins 4096 Oct 28 04:17 users/
+
+export JENKINS_HOME=/opt/jenkins_bkp
+
+export JENKINS_HOME=/opt/jenkins
+
+
+drwxr-xr-x 20 jenkins jenkins  4096 Nov 14 04:36  ./
+drwxr-xr-x 41 root    root     4096 Oct 28 04:10  ../
+drwxr-xr-x  3 jenkins jenkins  4096 Nov  8 13:49  .OpenMRS/
+-rw-------  1 jenkins jenkins    46 Nov  8 13:22  .bash_history
+drwxr-xr-x  4 jenkins jenkins  4096 Oct 28 04:12  .cache/
+drwxr-xr-x  3 jenkins jenkins  4096 Nov  8 13:23  .config/
+drwxr-xr-x  3 jenkins jenkins  4096 Oct 28 04:16  .groovy/
+drwxr-xr-x  3 jenkins jenkins  4096 Oct 28 04:12  .java/
+-rw-r--r--  1 jenkins jenkins     0 Nov 14 04:32  .lastStarted
+drwxr-xr-x  3 jenkins jenkins  4096 Nov  8 12:40  .m2/
+-rw-r--r--  1 jenkins jenkins     4 Nov 12 13:39  .owner
+drwxr-xr-x  4 jenkins jenkins  4096 Nov  9 04:51  .sonar/
+drwxr-xr-x  4 jenkins jenkins  4096 Nov 12 12:34  FULL-2022-11-12_12-34/
+-rw-r--r--  1 jenkins jenkins     0 Nov 14 04:38 'ThinBackup Worker Thread.log'
+drwxr-xr-x  3 jenkins jenkins  4096 Nov  8 12:38  caches/
+-rw-r--r--  1 jenkins jenkins   271 Nov  9 04:50  com.cloudbees.hudson.plugins.folder.config.AbstractFolderConfiguration.xml
+-rw-r--r--  1 jenkins jenkins  1691 Nov 14 04:32  config.xml
+-rw-r--r--  1 jenkins jenkins  2287 Nov  9 04:50  credentials.xml
+-rw-r--r--  1 jenkins jenkins   135 Nov  9 04:50  github-plugin-configuration.xml
+-rw-r--r--  1 jenkins jenkins   156 Nov 14 04:32  hudson.model.UpdateCenter.xml
+-rw-r--r--  1 jenkins jenkins   238 Nov  9 04:50  hudson.plugins.build_timeout.global.GlobalTimeOutConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   250 Nov  9 04:50  hudson.plugins.build_timeout.operations.BuildStepOperation.xml
+-rw-r--r--  1 jenkins jenkins  1476 Nov  9 04:50  hudson.plugins.emailext.ExtendedEmailPublisher.xml
+-rw-r--r--  1 jenkins jenkins   630 Nov  9 04:50  hudson.plugins.git.GitSCM.xml
+-rw-r--r--  1 jenkins jenkins   371 Oct 28 04:16  hudson.plugins.git.GitTool.xml
+-rw-r--r--  1 jenkins jenkins   331 Nov  9 04:50  hudson.plugins.gradle.injection.InjectionConfig.xml
+-rw-r--r--  1 jenkins jenkins   930 Nov  9 04:50  hudson.plugins.sonar.SonarGlobalConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   382 Nov  9 04:50  hudson.plugins.timestamper.TimestamperConfig.xml
+-rw-r--r--  1 jenkins jenkins   262 Nov  9 04:50  hudson.tasks.Mailer.xml
+-rw-r--r--  1 jenkins jenkins    76 Nov  9 04:50  hudson.tasks.Shell.xml
+-rw-r--r--  1 jenkins jenkins   216 Nov  9 04:50  hudson.triggers.SCMTrigger.xml
+-rw-------  1 jenkins jenkins  1680 Oct 28 04:16  identity.key.enc
+-rw-r--r--  1 jenkins jenkins   297 Nov  9 04:50  io.jenkins.plugins.junit.storage.JunitTestResultStorageConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   277 Nov  9 04:50  jenkins.fingerprints.GlobalFingerprintConfiguration.xml
+-rw-r--r--  1 jenkins jenkins     7 Nov 14 04:32  jenkins.install.InstallUtil.lastExecVersion
+-rw-r--r--  1 jenkins jenkins     7 Oct 28 04:17  jenkins.install.UpgradeWizard.state
+-rw-r--r--  1 jenkins jenkins   159 Nov  9 04:50  jenkins.model.ArtifactManagerConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   253 Nov  9 04:50  jenkins.model.GlobalBuildDiscarderConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   292 Nov  9 04:50  jenkins.model.JenkinsLocationConfiguration.xml
+-rw-r--r--  1 jenkins jenkins    86 Nov  9 04:50  jenkins.security.ResourceDomainConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   179 Nov  9 04:50  jenkins.tasks.filters.EnvVarsFilterGlobalConfiguration.xml
+-rw-r--r--  1 jenkins jenkins   171 Oct 28 04:12  jenkins.telemetry.Correlator.xml
+drwxr-xr-x  9 jenkins jenkins  4096 Nov  9 04:41  jobs/
+drwxr-xr-x  3 jenkins jenkins  4096 Oct 28 04:40  logs/
+-rw-r--r--  1 jenkins jenkins   907 Nov 14 04:32  nodeMonitors.xml
+drwxr-xr-x  2 jenkins jenkins  4096 Oct 28 04:12  nodes/
+-rw-r--r--  1 jenkins jenkins   289 Nov  9 04:50  org.jenkinsci.plugins.github_branch_source.GitHubConfiguration.xml
+-rw-r--r--  1 jenkins jenkins    46 Nov  9 04:51  org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+-rw-r--r--  1 jenkins jenkins   169 Nov  9 04:50  org.jenkinsci.plugins.workflow.flow.GlobalDefaultFlowDurabilityLevel.xml
+-rw-r--r--  1 jenkins jenkins   229 Nov  9 04:50  org.jenkinsci.plugins.workflow.libs.GlobalLibraries.xml
+drwxr-xr-x 97 jenkins jenkins 12288 Nov 12 12:28  plugins/
+-rw-r--r--  1 jenkins jenkins   130 Nov 12 14:51  queue.xml.bak
+-rw-r--r--  1 jenkins jenkins   386 Nov 12 12:31  scriptApproval.xml
+-rw-r--r--  1 jenkins jenkins    64 Oct 28 04:12  secret.key
+-rw-r--r--  1 jenkins jenkins     0 Oct 28 04:12  secret.key.not-so-secret
+drwx------  2 jenkins jenkins  4096 Nov  8 12:40  secrets/
+-rw-r--r--  1 jenkins jenkins  1028 Nov 14 04:36  thinBackup.xml
+drwxr-xr-x  2 jenkins jenkins  4096 Nov 14 04:33  updates/
+drwxr-xr-x  2 jenkins jenkins  4096 Oct 28 04:12  userContent/
+drwxr-xr-x  3 jenkins jenkins  4096 Oct 28 04:17  users/
+drwxr-xr-x  4 jenkins jenkins  4096 Nov  9 04:47  workspace/
+
+
+
+https://www.digitalocean.com/community/tutorials/an-introduction-to-continuous-integration-delivery-and-deployment
+
+https://www.baeldung.com/maven-deploy-nexus
+https://www.youtube.com/watch?v=KNGQ9JBQWhQ
+
+
+https://github.com/DeekshithSN/nexus--maven-samples/blob/master/pom.xml
+
+https://www.youtube.com/watch?v=0bMTUjuI5eU
+
+https://www.devopsschool.com/blog/how-to-upload-the-artifacts-in-sonatype-nexus/
+
+https://www.devopsschool.com/certification/sre-certified-professional-srecp.html
+
+https://devopspilot.com/nav/maven.html
+
+

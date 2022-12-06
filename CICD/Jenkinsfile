@@ -1,0 +1,76 @@
+pipeline{
+    agent any
+    environment {
+      PATH = "$PATH:/opt/maven/bin"
+      JAVA_HOME = "/usr/lib/jvm/java-1.8.0-openjdk-amd64/"
+    }
+stages{
+stage('SCM') {
+   /// clone gol code
+   steps{
+       /// clone gol code
+       git 'https://github.com/wakaleo/game-of-life.git'
+         }
+}
+
+stage('code build') {
+   /// Build Application 
+   steps{
+      /// Build Application
+         sh 'mvn clean package'
+         sh 'echo $JAVA_HOME'
+         sh 'java -version' 
+      }
+}
+/*stage('sonarqube') {
+   steps{
+        withSonarQubeEnv('sonarqube-8.9') { 
+        // If you have configured more than one global server connection, you can specify its name
+//      sh "${scannerHome}/bin/sonar-scanner"
+        sh "mvn sonar:sonar"
+    }
+        }
+}*/
+
+stage('Artifact') {
+   steps{
+        nexusArtifactUploader artifacts: [
+         [artifactId: 'gameoflife', 
+         classifier: '', 
+         file: 'gameoflife-web/target/gameoflife.war', 
+         type: 'war']
+         ], 
+         credentialsId: 'nexus', 
+         groupId: 'com.wakaleo.gameoflife', 
+         nexusUrl: '54.221.169.125:8081', 
+         nexusVersion: 'nexus3', 
+         protocol: 'http', 
+         repository: 'practice', 
+         version: '1.0-SNAPSHOT'
+        }
+}
+
+
+
+http://54.221.169.125:8081/repository/practice/
+
+http://54.221.169.125:8081/repository/practice/
+
+
+<distributionManagement>
+    <repository>
+      <id>Releases</id>
+      <name>xxx Releases Repositories</name>
+      <url>http://xxx.xxx.com:8080/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>Snapshots</id>
+      <name>xxx Snapshots Repositories</name>
+      <url>http://xxx.xxx.com:8080/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement> 
+
+
+
+  1. clone to ur repositories
+  2. add distributionManagement plugin  

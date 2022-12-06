@@ -5,7 +5,7 @@
   3. Code Quality Analysic - SONARQUBE 
   4. Storing Artifact -- NEXUS --> You can skip if you don't know [if you store artifact in Nexus it will give url for war file]. 
 ### CD Stages: 
-  1. Deploy Application into Application[tomcat] 
+  1. Deploy Application into Application [tomcat/Weblogic] 
 
 
 

@@ -64,3 +64,15 @@ LDAP -- Acive Directory 100 --> User database --> Jenkins
 
 
 drwxr-xr-x  9 jenkins jenkins 4096 Oct 13 04:52 gameoflife/
+
+
+### CICD Jobs 
+  1. Freestyle 
+  2. Pipeline -- code or script 
+      1. Groovy script   ---> How to export env in groovy script 
+      2. Declarative Pipeline  ---> 
+
+
+## VI Editor 
+  1. Command mode  Esc
+  2. Insert mode -- i, A, a,o, O

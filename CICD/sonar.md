@@ -44,7 +44,7 @@ SonarQube is an open-source static testing analysis software, it is used by deve
 
  ## SonarQube Setup
 
-2. Download [soarnqube](https://www.sonarqube.org/downloads/) and extract it.   
+2. got /opt directory and Download [soarnqube](https://www.sonarqube.org/downloads/) and extract it.   
   ```
   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
   apt install unzip
