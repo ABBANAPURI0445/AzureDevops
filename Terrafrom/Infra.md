@@ -21,6 +21,7 @@
      1. ARM Template --> its supports Azure(provider) 
      2. CLoud Formation -->its supports  AWS(Provider)
      3. Terraform --> generic, Public and Private clouds  , Its support 1000's provierds 
+     4.power shell
 
 
 ### How to create Infrastructure using IAC 
