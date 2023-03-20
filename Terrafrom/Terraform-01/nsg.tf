@@ -4,8 +4,8 @@ resource "azurerm_network_security_group" "nsg" {
   resource_group_name = azurerm_resource_group.rg.name 
 
   security_rule {
-    name                       = "add 80 and 8080"
-    priority                   = 120
+    name                       = "test123"
+    priority                   =  100
     direction                  = "Inbound"
     access                     = "Allow"
     protocol                   = "Tcp"
